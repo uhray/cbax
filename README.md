@@ -97,4 +97,3 @@ Retrieves the value associate with this key (values set using the <b>set</b> met
 
 * More prepackaged middleware
 * More events of use
-* Add set/get functions to cbax so you can store values. Useful for middleware getting information if needed. Like how express has app.get and app.set
