@@ -5,7 +5,7 @@ Cbax is a simple library for creating callback streams that operate like connect
 
 ### Simple Example
 
-```
+```js
 var cbax = require('./cbax'),
     fs = require('fs');
 
