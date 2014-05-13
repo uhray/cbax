@@ -46,6 +46,8 @@ The error and data will be preserved from the caller of cbax. The next function 
 
 If you call the next object with values, they will override the original error and data. next('error') will override the error. next('error', 'data') will override both error and data.
 
+The <i>context</i> of the callback will also be the context. This context most notably has the <a href="#cb-get">get</a> method to retrieve values associated with this cbax instance.
+
 ### Middleware
 
 CBax comes packaged with some useful middleware that you can add to your middleware chains if you desire.
@@ -78,8 +80,20 @@ This is called with an callback chain is first called. It is called with the (er
 
 This is called with an callback chain is done. It is called with the (error, data) values and the context is the cbax context. Note: this will not be called if the callback chain ends without going to the end. However, middelware that stops the chain is able to emit a stop action if it desires.
 
+### SetGet
+
+The cbax object has setters and getters. This offers two api methods:
+
+
+<a name="cb-set" href="#cb-set">#</a> cbax.<b>set</b>(<i>key</i>, <i>value</i>)
+
+Set's the key-value pair on the object so that callback functions can be configured with more information than just the value in the argument array.
+
+<a name="cb-get" href="#cb-get">#</a> cbax.<b>get</b>(<i>key</i>)
+
+Retrieves the value associate with this key (values set using the <b>set</b> method).
+
 ### Future Work
 
 * More prepackaged middleware
 * More events of use
-* Add set/get functions to cbax so you can store values. Useful for middleware getting information if needed. Like how express has app.get and app.set
