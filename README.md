@@ -32,7 +32,7 @@ Creates a copy of the cbax object with the same middleware. This allows you to c
 
 <a name="fresh" href="#fresh">#</a> cbax.<b>fresh</b>([<i>callback</i>, cb2, cb3...])
 
-Create a new cbax object with no middleware other than the optional <i>callback</i> values pprovided as arguments here.
+Create a new cbax object with no middleware other than the optional <i>callback</i> values provided as arguments here.
 
 <a name="call" href="#call">#</a> <b>cbax</b>([<i>callback</i>, cb2, cb3...])
 
