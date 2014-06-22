@@ -42,11 +42,13 @@ Returns a function with all the preset middleware plus the provided <i>callbacks
 
 Callbacks should expect three arguments: (error, data, next, context)
 
-The error and data will be preserved from the caller of cbax. The next function will continue down the middleware chain. The context is the context of the cbax object.
+The error and data will be preserved from the caller of cbax. The next function will continue down the middleware chain. The context is the context of the cbax object.  This context most notably has the <a href="#cb-get">get</a> method to retrieve values associated with this cbax instance.
 
 If you call the next object with values, they will override the original error and data. next('error') will override the error. next('error', 'data') will override both error and data.
 
-The <i>context</i> of the callback will also be the context. This context most notably has the <a href="#cb-get">get</a> method to retrieve values associated with this cbax instance.
+The <i>context</i> of the callback will the context set by the function caller.
+
+NEW: you can now change the callback format if your callback does not expect only two arguments, you can change the default. Do `cbax.config.num_args = 7` to set the number of arguments to 7. This means that the `next` and `context` arguments will be the 8th and 9th arguments, respecively.
 
 ### Middleware
 
