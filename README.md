@@ -80,7 +80,7 @@ This is called with an callback chain is first called. It is called with the (er
 
 <a name="ev-stop" href="#ev-stop">#</a> cbax.<b>on</b>('stop', <i>callback</i>)
 
-This is called with an callback chain is done. It is called with the (error, data) values and the context is the cbax context. Note: this will not be called if the callback chain ends without going to the end. However, middelware that stops the chain is able to emit a stop action if it desires.
+This is called with an callback chain is done. It is called with the first argument as the array of arguments that would be passed down the middleware chain.
 
 ### SetGet
 
