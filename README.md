@@ -1,7 +1,7 @@
 CBAX Library
 ===============
 
-Cbax is a simple library for creating callback streams that operate like connect middleware. It works for callbacks that expect to called with (error, data).
+Cbax is a simple library for creating callback streams that operate like connect middleware. It works for callbacks that expect to be called with (error, data).
 
 Install with `npm install cbax@git+ssh://git@github.com:uhray/cbax.git`.
 
