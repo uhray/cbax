@@ -72,24 +72,24 @@ Stops the chain unless there is data and is no error. This is the same as using 
 
 ### Events
 
-The cbax object is and event emitter. This means you can listen for the following events.
+The cbax object is an event emitter. This means you can listen for the following events.
 
 <a name="ev-start" href="#ev-start">#</a> cbax.<b>on</b>('start', <i>callback</i>)
 
-This is called with an callback chain is first called. It is called with the (error, data) values and the context is the cbax context.
+This is called when a callback chain is first called. It is called with the (error, data) values and the context is the cbax context.
 
 <a name="ev-stop" href="#ev-stop">#</a> cbax.<b>on</b>('stop', <i>callback</i>)
 
-This is called with an callback chain is done. It is called with the first argument as the array of arguments that would be passed down the middleware chain.
+This is called when a callback chain is done. It is called with the first argument as the array of arguments that would be passed down the middleware chain.
 
 ### SetGet
 
-The cbax object has setters and getters. This offers two api methods:
+The cbax object has setters and getters. This offers two API methods:
 
 
 <a name="cb-set" href="#cb-set">#</a> cbax.<b>set</b>(<i>key</i>, <i>value</i>)
 
-Set's the key-value pair on the object so that callback functions can be configured with more information than just the value in the argument array.
+Sets the key-value pair on the object so that callback functions can be configured with more information than just the value in the argument array.
 
 <a name="cb-get" href="#cb-get">#</a> cbax.<b>get</b>(<i>key</i>)
 
