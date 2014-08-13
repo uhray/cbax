@@ -40,7 +40,7 @@ Returns a function with all the preset middleware plus the provided <i>callbacks
 
 ### Callback format
 
-Callbacks should expect three arguments: (error, data, next, context)
+Callbacks should expect four arguments: (error, data, next, context)
 
 The error and data will be preserved from the caller of cbax. The next function will continue down the middleware chain. The context is the context of the cbax object.  This context most notably has the <a href="#cb-get">get</a> method to retrieve values associated with this cbax instance.
 
@@ -52,7 +52,7 @@ NEW: you can now change the callback format if your callback does not expect onl
 
 ### Middleware
 
-CBax comes packaged with some useful middleware that you can add to your middleware chains if you desire.
+Cbax comes packaged with some useful middleware that you can add to your middleware chains if you desire.
 
 <a name="mw-log" href="#mw-log">#</a> cbax.<b>log</b>()
 
