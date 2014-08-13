@@ -68,7 +68,7 @@ If there is no data, it stops the middleware chain.
 
 <a name="mw-clean" href="#mw-clean">#</a> cbax.<b>clean</b>()
 
-Stops the chain unless there is data and is no error. This the same as using both estop and dstop.
+Stops the chain unless there is data and is no error. This is the same as using both estop and dstop.
 
 ### Events
 
