@@ -1,7 +1,7 @@
 {
   "name": "cbax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
-    "utools": "git://github.com/uhray/utools.git#1.0.0"
+    "utools": "https://github.com/uhray/utools.git#1.0.0"
   }
 }
